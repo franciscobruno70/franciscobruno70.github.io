@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Producto</title>
+    <style>
+        body {
+            background-color: #d2e0d2; /* Verde claro */
+            text-align: center; /* Centrar el contenido */
+        }
+
+        h1 {
+            color: #333; /* Color del texto */
+        }
+
+        .product {
+            display: inline-block;
+            margin: 50px; /* Separación entre productos */
+        }
+
+        .product-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Computadoras</h1>
+
+    <div class="product" id="product1">
+        <img src="asus.jpg">
+        <p>asus 16</p>
+        <p>$ 13,446.47</p>
+        <p>Cantidad disponible: <span id="quantity1">5</span></p>
+        <button onclick="openDetails('Detalles de Asus', 'Marca: Asus\nModelo: 16\nEspecificaciones: 24GB RAM 1TB SSD VivoBook 16X portátil, Windows 11 Pro, procesador AMD Ryzen 7 5800HS de 8 núcleos, visualización antirreflejos WUXGA IPS, obturador de privacidad de cámara, HDMI, USB-C, azul')">Detalles</button>
+        <button onclick="buyProduct(1)">Comprar</button>
+    </div>
+
+    <div class="product" id="product2">
+        <img src="lenovo.jpg">
+        <p>Lenovo Laptop</p>
+        <p>$ 7,800.00</p>
+        <p>Cantidad disponible: <span id="quantity2">3</span></p>
+        <button onclick="openDetails('Detalles de Lenovo', 'Marca: Lenovo\nModelo: Laptop\nEspecificaciones: Touchscreen AMD Ryzen 3 8GB RAM 256GB SSD | Lector de Tarjetas, Dolby Audio Windows 11')">Detalles</button>
+        <button onclick="buyProduct(2)">Comprar</button>
+    </div>
+
+    <div class="product" id="product3">
+        <img src="hp.jpg">
+        <p>HP Laptop 15-ef2500la</p>
+        <p>$ 15,300.00</p>
+        <p>Cantidad disponible: <span id="quantity3">5</span></p>
+        <button onclick="openDetails(
+            'Detalles de HP',
+            'Marca: HP\nModelo: Laptop 15-ef2500la\nEspecificaciones: AMD Ryzen 7, 16 GB, 512 GB SSD, 15.6, HD, Windows 11 Home, Teclado en Español, Garantía México')">Detalles</button>
+        <button onclick="buyProduct(3)">Comprar</button>
+    </div>
+
+    <!-- Resto de productos -->
+
+    <script>
+        function buyProduct(productNumber) {
+            // Función buyProduct permanece igual
+        }
+
+        function openDetails(title, details) {
+            alert(title + '\n\n' + details);
+        }
+    </script>
+</body>
+</html>
